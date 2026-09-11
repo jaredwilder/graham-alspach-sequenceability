@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "ERDOSFIRE-SOTA-MATH-UPGRADE-2026-07-14",
+  "source_packet_sha256": "2e23a297dd47a416ab811e8d6b105533003145f238ae5768c2f39963ebec79f0",
+  "task_graph_file": "task-graph.json",
+  "original_checklist_file": "08-ORIGINAL-TARGET-CHECKLIST.md",
+  "supersession_map_file": "09-TARGET-SUPERSESSION-MAP.json",
+  "evidence_root": "evidence",
+  "statuses": [
+    "TODO",
+    "IN_PROGRESS",
+    "BLOCKED",
+    "DONE",
+    "WAIVED",
+    "NEEDS_REAL_TEST"
+  ],
+  "completion_rules": [
+    "Every P0 task and phase gate is DONE with required evidence",
+    "P0/trust tasks cannot be waived",
+    "All 811 original items are checked or validly superseded",
+    "B0 false terminal closures=0",
+    "Critical closure/state mutation survivors=0",
+    "Critical conformance false accepts=0",
+    "Event replay mismatches=0",
+    "Shipped clean-room replay=100%",
+    "Source and novelty coverage=100% for shipped claims",
+    "Prospective open claims require independent adjudication",
+    "Final release reproduces from clean checkout and is signed"
+  ]
+}

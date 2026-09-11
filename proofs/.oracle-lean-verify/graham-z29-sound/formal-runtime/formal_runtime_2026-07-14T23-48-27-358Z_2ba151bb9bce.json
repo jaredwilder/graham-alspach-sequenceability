@@ -1,0 +1,93 @@
+{
+  "version": "oracle-formal-runtime-v1",
+  "generatedAt": "2026-07-14T23:48:27.358Z",
+  "sourceRoute": "lean-verify-cli",
+  "claimId": "2ba151bb9bce3ec0a77d606e",
+  "targetText": "Verify the existing Lean 4 proof file at public/proofs/graham-z29/GrahamZ29Sound.lean elaborates cleanly with no sorry/admit and no project-local axiom.",
+  "tools": {
+    "lean": {
+      "kind": "lean",
+      "command": "lean",
+      "available": true,
+      "version": "Lean (version 4.32.0, x86_64-w64-windows-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+      "error": null
+    },
+    "lake": {
+      "kind": "lake",
+      "command": "lake",
+      "available": true,
+      "version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
+      "error": null
+    },
+    "z3": {
+      "kind": "z3",
+      "command": "z3",
+      "available": false,
+      "version": "Executable not found in $PATH: \"z3\"",
+      "error": "Executable not found in $PATH: \"z3\""
+    },
+    "cvc5": {
+      "kind": "cvc5",
+      "command": "cvc5",
+      "available": false,
+      "version": "Executable not found in $PATH: \"cvc5\"",
+      "error": "Executable not found in $PATH: \"cvc5\""
+    }
+  },
+  "prefilter": {
+    "attempted": false,
+    "engine": null,
+    "status": "skipped",
+    "command": [],
+    "exitCode": null,
+    "durationMs": null,
+    "timedOut": false,
+    "summary": "Solver prefilter skipped because no scalar constraints were extractable from the claim text.",
+    "stdoutPreview": null,
+    "stderrPreview": null,
+    "extractedConstraints": [],
+    "extractedVariables": [],
+    "persistence": {
+      "smtPath": null,
+      "stdoutPath": null,
+      "stderrPath": null
+    },
+    "notes": [
+      "No scalar inequalities/equalities were extractable, so SMT would have been ornamental."
+    ]
+  },
+  "execution": {
+    "attempted": true,
+    "status": "passed",
+    "strategy": "lake_env_lean",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\graham-z29\\GrahamZ29Sound.lean"
+    ],
+    "cwd": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs",
+    "exitCode": 0,
+    "signalCode": null,
+    "durationMs": 54978,
+    "timedOut": false,
+    "summary": "Formal runtime passed in 54978ms.",
+    "stdoutPreview": "'GrahamZ29.partialSums_length' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GrahamZ29.partialSums_getElem' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GrahamZ29.partialSumsDistinct_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GrahamZ29.properPartialSumsNonzero_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GrahamZ29.checkWitness_sound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "stderrPreview": null,
+    "leanInputPath": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\graham-z29\\GrahamZ29Sound.lean"
+  },
+  "formalTrackPassed": true,
+  "theoremGradeReady": true,
+  "persistence": {
+    "dir": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\.oracle-lean-verify\\graham-z29-sound\\formal-runtime",
+    "jsonPath": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\.oracle-lean-verify\\graham-z29-sound\\formal-runtime\\formal_runtime_2026-07-14T23-48-27-358Z_2ba151bb9bce.json",
+    "leanInputPath": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\graham-z29\\GrahamZ29Sound.lean",
+    "stdoutPath": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\.oracle-lean-verify\\graham-z29-sound\\formal-runtime\\formal_stdout_2026-07-14T23-48-27-352Z_2ba151bb9bce.txt",
+    "stderrPath": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs\\.oracle-lean-verify\\graham-z29-sound\\formal-runtime\\formal_stderr_2026-07-14T23-48-27-352Z_2ba151bb9bce.txt"
+  },
+  "notes": [
+    "Lean project root detected at C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\public\\proofs",
+    "Lake cache warm skipped because this Lean project declares no Mathlib dependency.",
+    "No scalar inequalities/equalities were extractable, so SMT would have been ornamental."
+  ]
+}

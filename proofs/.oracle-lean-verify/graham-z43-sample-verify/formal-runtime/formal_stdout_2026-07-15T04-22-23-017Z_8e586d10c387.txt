@@ -1,0 +1,18 @@
+'GrahamZ43.Sample.w36_checks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w36_checks._native.native_decide.ax_1_1]
+'GrahamZ43.Sample.w36_sequenceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w36_checks._native.native_decide.ax_1_1]
+'GrahamZ43.Sample.sample_all_sequenceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w36_checks._native.native_decide.ax_1_1,
+ w37_checks._native.native_decide.ax_1_1,
+ w38_checks._native.native_decide.ax_1_1,
+ w39_checks._native.native_decide.ax_1_1,
+ w40_checks._native.native_decide.ax_1_1,
+ w41_checks._native.native_decide.ax_1_1,
+ w42_checks._native.native_decide.ax_1_1]

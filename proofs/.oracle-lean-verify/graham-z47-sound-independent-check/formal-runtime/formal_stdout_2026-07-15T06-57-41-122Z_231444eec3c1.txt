@@ -1,0 +1,15 @@
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\graham-z47\GrahamZ47Sound.lean:18:0: error: unknown module prefix 'GrahamZ47Checker'
+
+No directory 'GrahamZ47Checker' or file 'GrahamZ47Checker.olean' in the search path entries:
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\Cli\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\batteries\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\Qq\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\aesop\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\proofwidgets\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\importGraph\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\LeanSearchClient\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\plausible\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\packages\mathlib\.lake\build\lib\lean
+C:\Users\jared\Local Sites\woocommerce-enterprise\public\proofs\.lake\build\lib\lean
+c:\Users\jared\.elan\toolchains\leanprover--lean4---v4.31.0-rc1\lib\lean
+c:\Users\jared\.elan\toolchains\leanprover--lean4---v4.31.0-rc1\lib\lean

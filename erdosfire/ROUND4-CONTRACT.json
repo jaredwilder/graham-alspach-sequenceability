@@ -1,0 +1,24 @@
+{
+  "contract": "ERDOSFIRE Round 4 final real-math release",
+  "status": "SATISFIED",
+  "noStubs": true,
+  "noIous": true,
+  "preservesRound2": true,
+  "preservesRound3": true,
+  "deliverables": {
+    "prospectiveTargetSelected": true,
+    "searchExecuted": true,
+    "certificateProduced": true,
+    "completeCoverageVerified": true,
+    "independentVerifierCount": 2,
+    "adversarialTests": true,
+    "deterministicRegeneration": true,
+    "paperPacket": true,
+    "noveltyAudit": true,
+    "oneCommandReleaseRunner": true
+  },
+  "nonClaims": [
+    "external peer review",
+    "categorical worldwide priority"
+  ]
+}

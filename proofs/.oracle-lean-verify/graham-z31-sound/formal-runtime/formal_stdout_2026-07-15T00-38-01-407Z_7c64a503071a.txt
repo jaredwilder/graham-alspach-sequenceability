@@ -1,0 +1,5 @@
+'GrahamZ31.partialSums_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrahamZ31.partialSums_getElem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrahamZ31.partialSumsDistinct_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrahamZ31.properPartialSumsNonzero_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrahamZ31.checkWitness_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "2.0.0",
+  "contract": "ERDOSFIRE Round 2 Capability Contract",
+  "signedDate": "2026-07-14",
+  "goal": "Oracle autonomously acquires frontier-math targets, formalizes them independently, searches with exact/model/formal workers, preserves immutable evidence, resumes without duplicate work, and never promotes an unverified truth claim.",
+  "implementationDelivery": "COMPLETE",
+  "clauses": [
+    {
+      "id": "R2-01",
+      "requirement": "Natural-language-only problem intake",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-round2.ts + offline production run"
+    },
+    {
+      "id": "R2-02",
+      "requirement": "Local JSON/JSONL/Markdown/text source acquisition",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-source-ingest.ts"
+    },
+    {
+      "id": "R2-03",
+      "requirement": "Allowlisted HTTP acquisition with immutable snapshots",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-http-source.ts + http-acquisition-run.json"
+    },
+    {
+      "id": "R2-04",
+      "requirement": "Automatic independent dual formalization",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-autonomous-formalizer.ts"
+    },
+    {
+      "id": "R2-05",
+      "requirement": "Independent conformance review",
+      "status": "PASS",
+      "evidence": "two accepted reviews required per production result"
+    },
+    {
+      "id": "R2-06",
+      "requirement": "Automatic theorem DAG and root research state",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-autonomous-graph.ts"
+    },
+    {
+      "id": "R2-07",
+      "requirement": "Adaptive certificate-first search portfolio",
+      "status": "PASS",
+      "evidence": "kernel, search policy, search engine"
+    },
+    {
+      "id": "R2-08",
+      "requirement": "Exact proof and disproof worker",
+      "status": "PASS",
+      "evidence": "sympy_worker.py + exact strategy"
+    },
+    {
+      "id": "R2-09",
+      "requirement": "Independent exact verification and optional second-process replay",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-sympy-runtime.ts"
+    },
+    {
+      "id": "R2-10",
+      "requirement": "Frontier-model provider routing",
+      "status": "PASS",
+      "evidence": "OpenAI-compatible and command providers"
+    },
+    {
+      "id": "R2-11",
+      "requirement": "Model research planner and decomposition",
+      "status": "PASS",
+      "evidence": "model-research.ts"
+    },
+    {
+      "id": "R2-12",
+      "requirement": "Model-to-Lean compiler-feedback lane",
+      "status": "PASS",
+      "evidence": "model-research.ts; fail-closed placeholder scan and Lean exit gate"
+    },
+    {
+      "id": "R2-13",
+      "requirement": "Persistent autonomous cycle runner",
+      "status": "PASS",
+      "evidence": "oracle-frontier-math-round2-autopilot.ts"
+    },
+    {
+      "id": "R2-14",
+      "requirement": "Crash-safe checkpoint and cross-cycle deduplication",
+      "status": "PASS",
+      "evidence": "content-hashed atomic state + two-cycle idle system test"
+    },
+    {
+      "id": "R2-15",
+      "requirement": "Immutable event chain and deterministic replay",
+      "status": "PASS",
+      "evidence": "45-event production replay valid"
+    },
+    {
+      "id": "R2-16",
+      "requirement": "Versioned CLI and API integration",
+      "status": "PASS",
+      "evidence": "Round 2 route and scripts"
+    },
+    {
+      "id": "R2-17",
+      "requirement": "Commissioned offline benchmark",
+      "status": "PASS",
+      "evidence": "6/6; 3 proof candidates; 3 disproof candidates; 0 false closures"
+    },
+    {
+      "id": "R2-18",
+      "requirement": "Regression compatibility with Round 1 trust kernel",
+      "status": "PASS",
+      "evidence": "27/27 selftest and 66/66 systemtest"
+    },
+    {
+      "id": "R2-19",
+      "requirement": "Fail-closed terminal truth promotion",
+      "status": "PASS",
+      "evidence": "truthClaimsEmitted fixed at 0; Round 1 closure predicate retained"
+    },
+    {
+      "id": "R2-20",
+      "requirement": "No fabricated frontier theorem or commissioning evidence",
+      "status": "PASS",
+      "evidence": "release truth statement and explicit runtime gates"
+    }
+  ],
+  "runtimeCapabilityGates": [
+    {
+      "capability": "Frontier model",
+      "implementation": "DELIVERED",
+      "commissioning": "OPERATOR_ENDPOINT_OR_COMMAND_REQUIRED"
+    },
+    {
+      "capability": "Lean/mathlib",
+      "implementation": "DELIVERED",
+      "commissioning": "PINNED_TOOLCHAIN_REQUIRED"
+    },
+    {
+      "capability": "Public frontier registries",
+      "implementation": "GENERIC_SECURE_ACQUISITION_DELIVERED",
+      "commissioning": "ALLOWLISTED_SOURCE_CONFIG_REQUIRED"
+    },
+    {
+      "capability": "External mathematical adjudication",
+      "implementation": "ROUND1_GATE_DELIVERED",
+      "commissioning": "INDEPENDENT_HUMAN_OR_ORGANIZATION_REQUIRED"
+    }
+  ],
+  "empiricalClaim": {
+    "newOpenProblemSolvedDuringBuild": false,
+    "frontierDiscoveryReliabilityEstablished": false,
+    "reason": "The release proves the autonomous machinery and exact benchmark lane. A real open-problem claim requires a prospective campaign and independent closure evidence."
+  }
+}

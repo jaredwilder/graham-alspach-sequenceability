@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "erdosfire.round3.recovery.v1",
+  "status": "RECOVERED_PARTIAL_NO_MATH_RESULT",
+  "round2Preserved": true,
+  "target": {
+    "name": "Graham rearrangement conjecture over F_29",
+    "prime": 29,
+    "plannedUnresolvedSubsetSizes": [21, 22, 23, 24, 25]
+  },
+  "survivingChanges": [
+    {
+      "path": "oracle/tools/frontier-math/round3/graham_f29_search.cpp",
+      "sha256": "61cf32b8554bc5c4b75163df77f7fc84a9e855f01738c73d8a10fc957b3962fd",
+      "kind": "source"
+    },
+    {
+      "path": "oracle/tools/frontier-math/round3/graham_f29_search",
+      "sha256": "8ff3b9906c0d458fe5ad17f766ce9d4e317691883cde369649827a9d8297392f",
+      "kind": "linux-x86_64-executable"
+    }
+  ],
+  "interruptedRun": {
+    "recordedPid": 37976,
+    "processStillRunning": false,
+    "summaryBytes": 0,
+    "progressLogBytes": 0,
+    "certificateProduced": false,
+    "verifiedResult": false
+  },
+  "claim": "No proof, disproof, exhaustive certificate, or novel mathematical result is claimed from the interrupted run."
+}

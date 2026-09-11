@@ -1,0 +1,59 @@
+{
+  "round": 4,
+  "status": "PASS",
+  "generatedAt": "2026-07-14",
+  "target": "Graham/Alspach sequenceability for Z_29",
+  "tests": {
+    "round4FullRelease": {
+      "status": "PASS",
+      "elapsedSeconds": 72.850342
+    },
+    "strictTypeScript": "PASS",
+    "pythonCompile": "PASS",
+    "round1Selftest": {
+      "status": "PASS",
+      "checks": 27
+    },
+    "round1Systemtest": {
+      "status": "PASS",
+      "checks": 66
+    },
+    "round2Systemtest": {
+      "status": "PASS",
+      "checks": 36
+    },
+    "round2Benchmark": {
+      "status": "PASS",
+      "passed": 6,
+      "total": 6,
+      "falseClosures": 0
+    },
+    "goFullExpansion": {
+      "status": "PASS",
+      "coveredSubsets": 1683218,
+      "scaledWitnessChecks": 1683752
+    },
+    "pythonOrbitAccounting": {
+      "status": "PASS",
+      "coveredSubsets": 1683218
+    },
+    "deterministicRegeneration": {
+      "status": "PASS",
+      "threadCounts": [
+        48,
+        16
+      ]
+    },
+    "adversarialCertificateMutations": {
+      "status": "PASS",
+      "mutations": 4,
+      "verifierRejections": 8
+    }
+  },
+  "certificateSha256": "4dd6b2b21f75ffdd1ff472d1bf9a70757ccea0b31f147d49c6b1ff675c5ef961",
+  "claim": "Complete computational certificate for sizes 21..28; combined with the 2026 <=20 theorem, Z_29 is closed.",
+  "nonClaims": [
+    "peer review",
+    "categorical worldwide priority"
+  ]
+}

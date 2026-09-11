@@ -1,0 +1,17 @@
+{
+  "status": "RECOVERED_WIP_NOT_COMPLETE",
+  "round2Preserved": true,
+  "mathematicalClaimProduced": false,
+  "candidateMask": "0x5fffffb",
+  "candidateCertified": false,
+  "reason": "Recovered solver conflates node-limit exhaustion with search failure; no valid coverage or counterexample certificate exists.",
+  "recoveredArtifacts": [
+    "oracle/tools/frontier-math/round3/graham_f29_search.cpp",
+    "oracle/tools/frontier-math/round3/graham_f29_search",
+    "oracle/tools/frontier-math/round3/adversarial-recovery/progress.log",
+    "oracle/tools/frontier-math/round3/adversarial-recovery/solve_mask_z3.py",
+    "oracle/tools/frontier-math/round3/adversarial-recovery/anneal.cpp",
+    "oracle/tools/frontier-math/round3/adversarial-recovery/anneal"
+  ],
+  "fileCount": 3175
+}

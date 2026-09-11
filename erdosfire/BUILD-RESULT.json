@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "2.0.0",
+  "product": "ERDOSFIRE Frontier Math Autopilot",
+  "round": 2,
+  "buildDate": "2026-07-14",
+  "implementationStatus": "ROUND2_COMPLETE",
+  "releaseStatus": "READY_FOR_COMMISSIONED_FRONTIER_CAMPAIGNS",
+  "objective": "Oracle autonomously acquires frontier-math targets, formalizes them independently, searches with exact/model/formal workers, preserves immutable evidence, resumes without duplicate work, and never promotes an unverified truth claim.",
+  "entrypoints": {
+    "oneShotCli": "oracle/server/scripts/frontier-math-round2.ts",
+    "persistentAutopilot": "oracle/server/scripts/frontier-math-round2-autopilot.ts",
+    "api": "POST /oracle/frontier-math/round2",
+    "benchmark": "oracle/server/scripts/benchmark-frontier-math-round2.ts",
+    "systemtest": "oracle/server/scripts/frontier-math-round2-systemtest.ts",
+    "exactWorker": "oracle/tools/frontier-math/sympy_worker.py"
+  },
+  "deliveredCapabilities": [
+    "Natural-language-only mathematical campaign intake",
+    "Local and secure allowlisted HTTP source acquisition with immutable snapshot receipts",
+    "Automatic dual independent formalization and conformance review",
+    "Automatic theorem DAG and immutable research-state initialization",
+    "Adaptive certificate-first strategy portfolio",
+    "Exact SymPy proof, inequality, and counterexample certificates",
+    "Independent exact quorum and optional second-process replay",
+    "OpenAI-compatible and command-line frontier-model providers",
+    "Model planner, decomposition, and model-to-Lean compiler-feedback workers",
+    "Persistent multi-cycle autopilot with atomic content-hashed state, deduplication, audit log, idle stop, and crash-safe resume",
+    "Fail-closed Round 1 closure, novelty, contamination, reproduction, and adjudication boundary",
+    "Versioned CLI, API, examples, runbooks, benchmark, and release evidence"
+  ],
+  "validation": {
+    "strictTypeScript": true,
+    "pythonWorkerCompile": true,
+    "round1Selftest": {
+      "ok": true,
+      "checks": 27
+    },
+    "round1Systemtest": {
+      "ok": true,
+      "checks": 66
+    },
+    "round2Systemtest": {
+      "ok": true,
+      "checks": 36
+    },
+    "commissionedOfflineBenchmark": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "falseClosures": 0,
+      "candidateProofs": 3,
+      "candidateDisproofs": 3
+    },
+    "productionNaturalLanguageCampaign": {
+      "problems": 3,
+      "candidateProofs": 2,
+      "candidateDisproofs": 1,
+      "truthClaimsEmitted": 0
+    },
+    "persistentAutopilotRun": {
+      "cycles": 1,
+      "processedProblems": 3,
+      "candidateProofs": 2,
+      "candidateDisproofs": 1
+    },
+    "eventReplay": {
+      "valid": true,
+      "eventCount": 45,
+      "errors": 0
+    },
+    "httpAcquisition": {
+      "valid": true,
+      "snapshotCount": 1,
+      "problemCount": 1
+    },
+    "traceability": {
+      "ok": true,
+      "records": 193
+    },
+    "doctor": {
+      "healthy": true,
+      "runnableOfflineStrategies": 7
+    }
+  },
+  "codeInventory": {
+    "frontierMathTypeScriptFiles": 232,
+    "frontierMathTypeScriptLines": 7199,
+    "exactWorkerPythonLines": 305
+  },
+  "truthClaims": {
+    "terminalTruthClaimsEmitted": 0,
+    "newFrontierTheoremClaimed": false,
+    "newFrontierDisproofClaimed": false,
+    "policy": "Candidate results must pass the unchanged signed Round 1 closure predicate."
+  },
+  "runtimeCapabilityGates": [
+    {
+      "capability": "Frontier model",
+      "implementation": "DELIVERED",
+      "commissioning": "OPERATOR_ENDPOINT_OR_COMMAND_REQUIRED"
+    },
+    {
+      "capability": "Lean/mathlib",
+      "implementation": "DELIVERED",
+      "commissioning": "PINNED_TOOLCHAIN_REQUIRED"
+    },
+    {
+      "capability": "Public frontier registries",
+      "implementation": "GENERIC_SECURE_ACQUISITION_DELIVERED",
+      "commissioning": "ALLOWLISTED_SOURCE_CONFIG_REQUIRED"
+    },
+    {
+      "capability": "External mathematical adjudication",
+      "implementation": "ROUND1_GATE_DELIVERED",
+      "commissioning": "INDEPENDENT_HUMAN_OR_ORGANIZATION_REQUIRED"
+    }
+  ],
+  "preservedRound1Plan": {
+    "taskGraphRecords": 193,
+    "originalUncheckedObligations": 811,
+    "note": "Round 2 does not falsify or bulk-check the historical plan. Its own signed capability contract is ROUND2-CONTRACT.json."
+  }
+}

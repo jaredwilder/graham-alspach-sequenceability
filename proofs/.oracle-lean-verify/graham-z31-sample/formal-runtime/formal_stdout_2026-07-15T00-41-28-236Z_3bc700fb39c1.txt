@@ -1,0 +1,21 @@
+'GrahamZ31.Sample.w21_checks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w21_checks._native.native_decide.ax_1_1]
+'GrahamZ31.Sample.w21_sequenceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w21_checks._native.native_decide.ax_1_1]
+'GrahamZ31.Sample.sample_all_sequenceable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ w21_checks._native.native_decide.ax_1_1,
+ w22_checks._native.native_decide.ax_1_1,
+ w23_checks._native.native_decide.ax_1_1,
+ w24_checks._native.native_decide.ax_1_1,
+ w25_checks._native.native_decide.ax_1_1,
+ w26_checks._native.native_decide.ax_1_1,
+ w27_checks._native.native_decide.ax_1_1,
+ w28_checks._native.native_decide.ax_1_1,
+ w29_checks._native.native_decide.ax_1_1,
+ w30_checks._native.native_decide.ax_1_1]

@@ -1,0 +1,54 @@
+{
+  "round": 4,
+  "status": "VERIFIED_COMPUTATIONAL_THEOREM",
+  "target": "Graham/Alspach sequenceability conjecture for Z_29",
+  "theorem": "Every subset A of Z_29\\{0} is sequenceable.",
+  "newlyCertifiedCardinalities": {
+    "minimum": 21,
+    "maximum": 28
+  },
+  "publishedBridge": {
+    "maximumCardinality": 20,
+    "source": "Costa-Della Fiore-Fontana-Vena, arXiv:2603.20961"
+  },
+  "certificate": {
+    "path": "evidence/round4-discovery/graham-z29/witnesses.tsv",
+    "sha256": "4dd6b2b21f75ffdd1ff472d1bf9a70757ccea0b31f147d49c6b1ff675c5ef961",
+    "representativeRows": 60134,
+    "coveredSubsets": 1683218,
+    "scaledWitnessChecks": 1683752
+  },
+  "coverageBySize": {
+    "21": 1184040,
+    "22": 376740,
+    "23": 98280,
+    "24": 20475,
+    "25": 3276,
+    "26": 378,
+    "27": 28,
+    "28": 1
+  },
+  "representativesBySize": {
+    "21": 42288,
+    "22": 13468,
+    "23": 3510,
+    "24": 735,
+    "25": 117,
+    "26": 14,
+    "27": 1,
+    "28": 1
+  },
+  "verification": {
+    "goFullExpansion": "PASS",
+    "pythonOrbitAccounting": "PASS",
+    "deterministicRegenerationAcrossThreadCounts": "PASS",
+    "adversarialMutationsRejectedByBothVerifiers": 4,
+    "falseClosures": 0
+  },
+  "claimScope": {
+    "mathematicalCertificate": "complete",
+    "localReproducibility": "complete",
+    "externalPeerReview": false,
+    "priority": "prospective; targeted search found no explicit prior Z_29 result"
+  }
+}

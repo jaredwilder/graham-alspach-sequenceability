@@ -1,0 +1,106 @@
+{
+  "buildDate": "2026-07-14",
+  "entrypoints": {
+    "api": "POST /oracle/frontier-math/autopilot",
+    "autopilot": "CONTEXT/package.json :: oracle:frontier-math:autopilot",
+    "benchmark": "CONTEXT/package.json :: oracle:frontier-math:benchmark",
+    "doctor": "CONTEXT/package.json :: oracle:frontier-math:doctor",
+    "selftest": "CONTEXT/package.json :: oracle:frontier-math:selftest",
+    "systemtest": "CONTEXT/package.json :: oracle:frontier-math:systemtest",
+    "typecheck": "CONTEXT/package.json :: oracle:frontier-math:typecheck"
+  },
+  "hardExternalBlockers": [
+    "Pinned Lean/mathlib production environment and proof sandbox commissioning",
+    "Bun/Vitest/Stryker dependency installation and mutation-score execution",
+    "External Lean/SMT/Sage/PARI/FLINT/Arb/model worker commissioning",
+    "Immutable container digests, SBOM generation, and offline verifier replay",
+    "24-hour local soak and crash-recovery run",
+    "Frozen 64-problem blind campaign and AlphaProof-independent reproductions",
+    "Prospective open-problem preregistration and campaign",
+    "Independent mathematical adjudication and independent security/red-team review",
+    "Evidence-backed resolution of the preserved original 811 obligations",
+    "Clean Git checkout final ship gate"
+  ],
+  "implementationStatus": "CODE_COMPLETE_TRUST_AND_AUTOPILOT_VERTICAL_SLICE",
+  "implementedCapabilities": [
+    "Immutable hash-chained research event store with deterministic replay and tamper detection",
+    "Typed problem, formalization, research-state, attempt, theorem-DAG, receipt, campaign, and closure contracts",
+    "Fail-closed status algebra and closure predicate",
+    "Signed verifier receipts with key allowlists, freshness, statement binding, and anti-ratchet checks",
+    "Signed closure packet finalization bound to an exact unsigned candidate",
+    "Dual-independent-formalization autopilot orchestration",
+    "Asynchronous adaptive strategy portfolio with Pareto frontier and anti-cycling",
+    "Forge omega-ladder, exact identity, bounded counterexample, algebraic normalization, and induction strategy lanes",
+    "Planner/worker/verifier, author/critic, reproduction, and campaign allocator agents",
+    "Source, novelty, contamination, prior-art, formalization, theorem graph, promotion, telemetry, dossier, and retraction services",
+    "Versioned API route, local CLI, operational doctor, checkpoint/replay, backup/restore, benchmark, and traceability commands",
+    "RTX 4080 / 16 GB resource profile and local-control/remote-worker separation",
+    "Trust-tiered CI, nightly hard-gate benchmark workflow, and release workflow"
+  ],
+  "objective": "Oracle autonomously ingests, formalizes, searches, verifies, reproduces, and packages frontier-mathematics campaigns without permitting unverified truth promotion.",
+  "preservedOriginalChecklist": {
+    "claim": "Preserved verbatim; no bulk completion or false supersession was recorded.",
+    "resolvedByEvidence": 0,
+    "totalUnchecked": 811
+  },
+  "product": "ERDOSFIRE Frontier Math Autopilot",
+  "releaseStatus": "COMMISSIONING_REQUIRED",
+  "schemaVersion": "1.0.0",
+  "taskGraph": {
+    "blocked": 25,
+    "done": 168,
+    "in_progress": 0,
+    "todo": 0,
+    "total": 193,
+    "waived": 0
+  },
+  "truthClaims": {
+    "frontierTheoremClaimed": false,
+    "proofOrDisproofClaimed": false,
+    "reason": "The build implements the machine and its trust boundary. It does not fabricate commissioning evidence or a prospective theorem result."
+  },
+  "validation": {
+    "benchmarkHarness": {
+      "executed": true,
+      "expectedHardGateExit": 1,
+      "falseClosures": 0,
+      "fullyCommissioned": false,
+      "uncommissioned": 33
+    },
+    "operationalDoctor": {
+      "healthy": true
+    },
+    "pythonCompile": {
+      "passed": true,
+      "roots": [
+        "oracle",
+        "forge"
+      ]
+    },
+    "restoreDrill": {
+      "actualCopyVerified": true,
+      "dryRunVerified": true,
+      "passed": true
+    },
+    "selftest": {
+      "checks": 27,
+      "ok": true
+    },
+    "strictTypeScript": {
+      "config": "oracle/tsconfig.frontier-math.json",
+      "passed": true
+    },
+    "systemtest": {
+      "checks": 66,
+      "ok": true
+    },
+    "traceability": {
+      "passed": true,
+      "records": 193
+    },
+    "typescriptSyntax": {
+      "files": 1025,
+      "passed": true
+    }
+  }
+}
