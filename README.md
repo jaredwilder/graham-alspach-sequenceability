@@ -1,45 +1,36 @@
-# graham-alspach-sequenceability
+# Graham–Alspach sequenceability in `Z_29` and `Z_31`
 
-Lean 4 closures of the Graham / Alspach sequenceability question in Z_29 and Z_31, each verified
-by more than one independent checker.
+Verified finite ranges for the Graham–Alspach sequenceability problem in `Z_29` and `Z_31`, with explicit witnesses, independent checking, and reproducible regeneration.
 
 Author: Jared Wilder. First public timestamp: 2026-09-10.
 
-## The results
+## Verified ranges
 
-- **Z_29: closed for subset cardinalities 21 through 28.** Eight real witnesses, one per
-  cardinality, verified by two independent checkers plus a regeneration.
-- **Z_31: closed for subset cardinalities 21 through 30.** Verified by a byte-identical
-  independent regeneration.
-- Partial closures on upper size ranges for Z_37, Z_41, Z_43, Z_47, Z_59, Z_61.
+- **`Z_29`: subset cardinalities 21 through 28.** One representative witness per cardinality range/orbit structure, checked independently and regenerated reproducibly.
+- **`Z_31`: subset cardinalities 21 through 30.** Verified with an independent byte-identical regeneration.
 
-## The trust footprint, stated plainly because the files state it themselves
+Larger-group extensions are published separately in `jaredwilder/graham-alspach-extended`.
 
-Every witness check carries the three standard axioms `{propext, Classical.choice, Quot.sound}`
-**plus exactly one `native_decide` axiom per witness.**
+## Lean verification boundary
 
-`native_decide` asks the Lean compiler to evaluate a decision procedure and trusts the result. It
-is weaker than a kernel proof. This is row two on any honest ladder: the result is closed, and the
-trust assumption is footnoted rather than hidden. Routing a witness through the soundness theorem
-adds nothing beyond that, and `GrahamZ29Verify.lean` documents the whole arrangement in its own
-header.
+The Lean witness checks depend on Mathlib's standard classical axioms `{propext, Classical.choice, Quot.sound}` plus one `native_decide` evaluation per witness.
 
-## Why there is a generalized checker
+`native_decide` asks the compiled decision procedure to evaluate the finite witness. It is therefore a compiler-backed finite check rather than a proof reduced entirely by the Lean kernel. `GrahamZ29Verify.lean` records that dependency explicitly.
 
-`proofs/graham-general/` holds a checker and a soundness theorem parametric in a prime p, and then
-specializes them to p = 29 and re-runs the original eight witnesses verbatim. The point of that
-exercise is stated in the file: to confirm the generalization is not merely well-typed in
-isolation but reproduces the original Z_29 result exactly, same witnesses accepted, same
-conclusion, same trust footprint.
+The mathematical claim is still concrete: the listed finite witnesses satisfy the sequenceability predicate. The verification boundary tells the reader how that fact was checked.
 
-That is a real guard. A generalization that type-checks and quietly accepts different witnesses
-would look identical from the outside.
+## Generalized checker
 
-## Also here
+`proofs/graham-general/` contains a checker and soundness theorem parameterized by the prime `p`. It is specialized back to `p=29` and rerun on the original eight witnesses, reproducing the same accepted witnesses and conclusions.
 
-`proofs/.oracle-lean-verify/` carries the independent-check and re-verify control runs, including
-the negative controls. `erdosfire/` carries the round-by-round build results and contracts from
-the campaign that produced this.
+That back-check verifies that the generalized implementation preserves the original `Z_29` calculation rather than merely type-checking in isolation.
+
+## Reproducibility material
+
+- `proofs/.oracle-lean-verify/` — historical directory containing independent rechecks and negative controls;
+- `erdosfire/` — historical build and run records from the research process that produced the certificates.
+
+The directory names are retained for provenance; neither is needed to understand the theorem statement itself.
 
 ## License
 
